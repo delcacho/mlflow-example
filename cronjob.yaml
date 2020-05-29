@@ -3,7 +3,7 @@ kind: CronJob
 metadata:
   name: "{replaced with MLflow Project name}"
 spec:
-  schedule: "0 * * * *"
+  schedule: "*/5 * * * *"
   jobTemplate:
     spec:
       template:
