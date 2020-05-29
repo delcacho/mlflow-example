@@ -2,6 +2,7 @@ apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
   name: "{replaced with MLflow Project name}"
+  namespace: default
 spec:
   schedule: "*/5 * * * *"
   jobTemplate:
@@ -12,9 +13,4 @@ spec:
           - name: "{replaced with MLflow Project name}"
             image: "{replaced with URI of Docker image created during Project execution}"
             command: ["{replaced with MLflow Project entry point command}"]
-          resources:
-            limits:
-              memory: 512Mi
-            requests:
-              memory: 256Mi
           restartPolicy: Never

@@ -1,5 +1,4 @@
 {
-  "kube-context": "docker-for-desktop",
   "repository-uri": "delcacho/mlflow-kubernetes-example",
-  "kube-job-template-path": "cronjob.yaml"
+  "kube-job-template-path": "mlflow-example/cronjob.yaml"
 }

@@ -25,6 +25,7 @@ def eval_metrics(actual, pred):
 
 
 if __name__ == "__main__":
+    mlflow.set_tracking_uri("http://mlflow.bayescluster.com")
     warnings.filterwarnings("ignore")
     np.random.seed(40)
 
@@ -63,4 +64,4 @@ if __name__ == "__main__":
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
 
-        mlflow.sklearn.log_model(lr, "model")
+        mlflow.sklearn.log_model(lr, "model", registered_model_name="Vino del Bueno")
