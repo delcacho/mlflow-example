@@ -1,7 +1,7 @@
 name: wine-cronjob
 
 docker_env:
-  image: delcacho/mlflowserver_rest
+  image: delcacho/mlflowserver_rest:0.5
 
 entry_points:
   main:
