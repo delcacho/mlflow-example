@@ -1,4 +1,4 @@
-name: tutorial
+name: wine-cronjob
 
 docker_env:
   image: delcacho/mlflow
