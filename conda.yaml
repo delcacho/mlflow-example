@@ -2,8 +2,11 @@ name: tutorial
 channels:
   - defaults
 dependencies:
-  - numpy=1.14.3
-  - pandas=0.22.0
-  - scikit-learn=0.19.1
-  - pip:
-    - mlflow
+- python=3.6.10
+- scikit-learn=0.22.1
+- pandas=0.22.0
+- numpy=1.14.3
+- cloudpickle==1.4.1
+- pip
+- pip:
+  - mlflow
